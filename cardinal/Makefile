@@ -9,7 +9,7 @@ golangci_version=v1.56.2
 lint-install:
 	@if ! command -v golangci-lint &> /dev/null; then \
 		echo "--> golangci-lint is not installed. Installing..."; \
-		@go install github.com/golangci/golangci-lint/cmd/golangci-lint@$(golangci_version); \
+		go install github.com/golangci/golangci-lint/cmd/golangci-lint@$(golangci_version); \
 	fi
 
 # Run golangci-lint on the project
